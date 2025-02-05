@@ -1,0 +1,468 @@
+body
+{
+    background-color: rgb(233, 248, 243);
+    background-image: url(./grafiki/tlo.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+main
+{
+    width: 60%;
+    margin: auto;
+    background-color: blueviolet;
+    padding: 1%;
+    box-shadow: 
+    -1px -1px 0 black,  
+    1px -1px 0 black,  
+    -1px 1px 0 black,  
+    1px 1px 0 black;
+    background-color: rgb(252, 252, 215);
+    border: 10px rgb(233, 248, 243) solid;
+}
+article p
+{
+    font-size: 80%;
+    color: rgb(185, 218, 208);
+}
+#main-header
+{
+    border: 10px rgb(233, 248, 243) solid;
+    margin: 2%;
+    padding: 2%;
+    color: rgb(233, 248, 243);
+    text-shadow: 
+    -1px -1px 0 black,  
+    1px -1px 0 black,  
+    -1px 1px 0 black,  
+    1px 1px 0 black;
+    box-shadow: 
+    -1px -1px 0 black,  
+    1px -1px 0 black,  
+    -1px 1px 0 black,  
+    1px 1px 0 black;
+    text-align: center;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 200%;
+    background-color: rgb(252, 252, 215);
+    background-image: url(./grafiki/header.png);
+    background-size: 110%;
+}
+section , article
+{
+    border: 10px rgb(233, 248, 243) solid;
+    margin: 5% 15%;
+    padding: 2%;
+    color: rgb(233, 248, 243);
+    text-shadow: 
+    -1px -1px 0 black,  
+    1px -1px 0 black,  
+    -1px 1px 0 black,  
+    1px 1px 0 black;
+    box-shadow: 
+    -1px -1px 0 black,  
+    1px -1px 0 black,  
+    -1px 1px 0 black,  
+    1px 1px 0 black;
+    text-align: center;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 200%;
+    background-color: rgb(252, 252, 215);
+}
+article
+{
+    margin: 5% 10%;
+}
+section h1
+{
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    padding: 1%;
+    box-shadow: 
+    -1px -1px 0 black,  
+    1px -1px 0 black,  
+    -1px 1px 0 black,  
+    1px 1px 0 black;
+    border: 10px rgb(233, 248, 243) solid;
+}
+
+#contact
+{
+    border: none;
+    box-shadow: none;
+    width: 90%;
+    display: flex;
+    gap: 2%;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: auto;
+    padding: 1%;
+    padding-bottom: 0;
+    margin-bottom: 2%;
+}
+#contact > section
+{
+    width: 50%;
+    max-height: 52.7vh;
+    padding: 0;
+    margin: 0;
+}
+#contact > iframe
+{
+    width: 50%;
+    padding: 0%;
+    margin: 0;
+    margin-bottom: 20%;
+    padding: 1%;
+    box-shadow: 
+    -1px -1px 0 black,  
+    1px -1px 0 black,  
+    -1px 1px 0 black,  
+    1px 1px 0 black;
+    border: 10px rgb(233, 248, 243) solid;
+    background-color: rgb(252, 252, 215);
+}
+footer h1
+{
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    padding: 1%;
+    box-shadow: 
+    -1px -1px 0 black,  
+    1px -1px 0 black,  
+    -1px 1px 0 black,  
+    1px 1px 0 black;
+    border: 10px rgb(233, 248, 243) solid;
+    text-align: center;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 200%;
+    color: rgb(233, 248, 243);
+    text-shadow: 
+    -1px -1px 0 black,  
+    1px -1px 0 black,  
+    -1px 1px 0 black,  
+    1px 1px 0 black;
+}
+#media
+{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    width: 90%;
+    display: flex;
+    gap: 2%;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: auto;   
+    padding: 1%;
+    margin-top: 0;
+}
+#media a:hover
+{
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+#media a:not(:hover)
+{
+    transform: scale(1);
+    transition: transform 1s;
+}
+#contact section 
+{
+    font-size: 100%;
+}
+#contact section ul
+{
+    text-align: center;
+    line-height: 110%;
+    margin-left: 0;
+    padding-left: 4%;
+    margin-bottom: 1%;
+}
+#contact section li
+{
+    margin: 0;
+    padding: 0;
+    font-size: 80%;
+    list-style-type: none;
+}
+#contact section li a 
+{
+    text-shadow: none;
+    font-weight: 600;
+}
+/*slider*/
+.slider {
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 1s;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.nav button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.nav button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
+}
+@media (max-width: 500px) {
+    body
+    {
+        font-size: 10%;
+    }
+    #main-header
+    {
+        text-shadow: 
+        -0.2px -0.2px 0 black,  
+        0.2px -0.2px 0 black,  
+        -0.2px 0.2px 0 black,  
+        0.2px 0.2px 0 black;
+    }
+    #contact
+    {
+        flex-wrap: wrap;
+        text-shadow: 
+        -0.2px -0.2px 0 black,  
+        0.2px -0.2px 0 black,  
+        -0.2px 0.2px 0 black,  
+        0.2px 0.2px 0 black;
+    }
+    section, article, footer h1, section h1, #contact iframe
+    {
+        text-shadow: 
+        -0.2px -0.2px 0 black,  
+        0.2px -0.2px 0 black,  
+        -0.2px 0.2px 0 black,  
+        0.2px 0.2px 0 black;
+        border: 5px rgb(233, 248, 243) solid;
+    }
+    #contact section
+    {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10%;
+        padding: 1%;
+    }
+    #media a img
+    {
+
+        width: 90%;
+    }
+    #media a
+    {
+        margin-top: 4%;
+        margin-bottom: 0;
+    }   
+    #contact>iframe
+    {
+        margin-top: 10%;
+        height: 30vh;
+        width: 80%;
+        margin: auto;
+    }
+    .dot
+    {
+        width: 5px;
+        height: 5px;
+    }
+    .nav button
+    {
+        transform: scale(0.5);
+    }
+}
+@media (min-width: 500px) AND (max-width: 900px) {
+    body
+    {
+        font-size: 40%;
+    }
+    #main-header
+    {
+        text-shadow: 
+        -0.5px -0.5px 0 black,  
+        0.5px -0.5px 0 black,  
+        -0.5px 0.5px 0 black,  
+        0.5px 0.5px 0 black;
+    }
+    #contact
+    {
+        flex-wrap: wrap;
+        text-shadow: 
+        -0.4px -0.4px 0 black,  
+        0.4px -0.4px 0 black,  
+        -0.4px 0.4px 0 black,  
+        0.4px 0.4px 0 black;
+    }
+    section, article, footer h1, section h1, #contact iframe
+    {
+        text-shadow: 
+        -0.2px -0.2px 0 black,  
+        0.2px -0.2px 0 black,  
+        -0.2px 0.2px 0 black,  
+        0.2px 0.2px 0 black;
+        border: 5px rgb(233, 248, 243) solid;
+    }
+    #contact section
+    {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10%;
+        padding: 1%;
+    }
+    #media a img
+    {
+
+        width: 90%;
+    }
+    #media a
+    {
+        margin-top: 4%;
+        margin-bottom: 0;
+    }   
+    #contact>iframe
+    {
+        margin-top: 10%;
+        height: 30vh;
+        width: 80%;
+        margin: auto;
+    }
+    .dot
+    {
+        width: 8px; 
+        height: 8px;
+    }
+    .nav button
+    {
+        transform: scale(0.8);
+    }
+}
+@media (min-width: 901px) AND (max-width: 1200px) {
+    body
+    {
+        font-size: 55%;
+    }
+    #main-header
+    {
+        text-shadow: 
+        -0.5px -0.5px 0 black,  
+        0.5px -0.5px 0 black,  
+        -0.5px 0.5px 0 black,  
+        0.5px 0.5px 0 black;
+    }
+    #contact
+    {
+        flex-wrap: wrap;
+        text-shadow: 
+        -0.4px -0.4px 0 black,  
+        0.4px -0.4px 0 black,  
+        -0.2px 0.4px 0 black,  
+        0.4px 0.4px 0 black;
+    }
+    section, article, footer h1, section h1, #contact iframe
+    {
+        text-shadow: 
+        -0.4px -0.4px 0 black,  
+        0.4px -0.4px 0 black,  
+        -0.4px 0.4px 0 black,  
+        0.4px 0.4px 0 black;
+        border: 5px rgb(233, 248, 243) solid;
+    }
+    #contact section
+    {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10%;
+        padding: 1%;
+    }
+    #media a img
+    {
+
+        width: 90%;
+    }
+    #media a
+    {
+        margin-top: 4%;
+        margin-bottom: 0;
+    }   
+    #contact>iframe
+    {
+        margin-top: 10%;
+        height: 30vh;
+        width: 80%;
+        margin: auto;
+    }
+    .dot
+    {
+        width: 5px;
+        height: 5px;
+    }
+    .nav button
+    {
+        transform: scale(0.5);
+    }
+}
+@media (min-width: 1201px) AND (max-width: 1300px)
+{
+    #media a img
+    {
+
+        width: 100%;
+    }  
+} 
